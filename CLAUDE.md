@@ -5,8 +5,9 @@ Plugin repository housing shared Claude Code skills for ICARM projects.
 ## Structure
 
 ```
-.claude-plugin/plugin.json   — Plugin manifest
-skills/<name>/SKILL.md       — One directory per skill
+.claude-plugin/plugin.json      — Plugin manifest
+.claude-plugin/marketplace.json — Marketplace catalog (for /plugin marketplace add)
+skills/<name>/SKILL.md          — One directory per skill (auto-discovered)
 ```
 
 ## Adding a new skill
@@ -17,6 +18,7 @@ skills/<name>/SKILL.md       — One directory per skill
 
 ## Installing into a project
 
-From any ICARM project: `/install-plugin /home/matt.linux/icarm/skills`
+- **From the GitHub marketplace:** `/plugin marketplace add icarm/skills` then `/plugin install icarm@icarm`
+- **From a local checkout:** `/plugin marketplace add /home/matt.linux/icarm/skills` then `/plugin install icarm@icarm`
 
 Skills will be namespaced as `icarm:<skill-name>`.

@@ -1,5 +1,18 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-plugin.json",
   "name": "icarm",
   "version": "0.1.0",
-  "description": "ICARM shared skills for research workflows"
+  "description": "ICARM shared skills for research workflows",
+  "author": {
+    "name": "ICARM"
+  },
+  "homepage": "https://github.com/icarm/skills",
+  "repository": "https://github.com/icarm/skills",
+  "license": "MIT",
+  "keywords": [
+    "icarm",
+    "skills",
+    "research",
+    "alphaevolve"
+  ]
 }
